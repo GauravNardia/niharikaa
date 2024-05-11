@@ -58,9 +58,10 @@ const Navbar = () => {
             </div>
            
           <Sheet>
-            <SheetTrigger className='p-5 z-40'><Image src="assets\menu.svg" height={30} width={30} alt='menu' /></SheetTrigger>
-            <SheetContent>
-                  <div className='flex flex-col w-full justify-center item-center gap-6 px-6 m-5 text-center mt-10'>
+            <SheetTrigger className='p-5 z-40 '><Image src="assets\menu.svg" height={30} width={30} alt='menu' /></SheetTrigger>
+          
+            <SheetContent className='bg-gray-300 pt-20'>
+                  <div className=' flex flex-col w-full justify-center item-center gap-6 px-6 m-5 text-center mt-10'>
             {navbarLinks.map((link) => {  
                  const isActive =   (pathname.includes(link.route) && link.route.length > 1) ||
                  pathname === link.route;
@@ -85,6 +86,7 @@ const Navbar = () => {
                 </Link>
           </div>
             </SheetContent>
+           
           </Sheet>
            
         </div>
