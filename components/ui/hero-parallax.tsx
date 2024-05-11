@@ -10,10 +10,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./button";
-import { useGSAP } from '@gsap/react';
-import gsap from 'gsap';
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+
 
 
 export const HeroParallax = ({
@@ -59,22 +56,6 @@ export const HeroParallax = ({
     useTransform(scrollYProgress, [0, 0.2], [-700, 500]),
     springConfig
   );
-
-  useGSAP(() => {
-    gsap.from('#exceptional',{
-      ease: 'power1.inOut',
-      opacity: 0,
-      y: 0,
-      stagger: 0.3
-    })
-    gsap.to('#exceptional', {
-      ease: 'power1.inOut',
-      opacity: 1,
-      y: -20,
-      stagger: 0.3
-    });
-  }, []);
-
 
   return (
     <div
@@ -126,13 +107,13 @@ export const HeroParallax = ({
 export const Header = () => {
   return (
     <div className="max-w-7xl relative py-20 md:py-20 px-5 md:mx-10 md:px-1 w-full top-0 z-40 select-none -mt-40">
-    <h1 id="exceptional" className=" text-4xl sm:text-6xl font-bold dark:text-white text-center md:text-left">
-    Empower Your <span id="exceptional" className="text-violet-700">Voice,</span> <br/><span id="exceptional">Expand Your Business</span><br/><span id="exceptional">with</span> <span id="exceptional" className="text-violet-700">Niharikaa.</span>
+    <h1  className=" text-4xl sm:text-6xl font-bold dark:text-white text-center md:text-left">
+    Empower Your <span className="text-violet-700">Voice,</span> <br/><span>Expand Your Business</span><br/><span>with</span> <span id="exceptional" className="text-violet-700">Niharikaa.</span>
     </h1>
-    <p id="exceptional" className="max-w-2xl text-base sm:text-xl mt-3 dark:text-neutral-200 text-center md:text-left">
+    <p className="max-w-2xl text-base sm:text-xl mt-3 dark:text-neutral-200 text-center md:text-left">
     A holistic approach that captures the essence of her multifaceted career and promises comprehensive personal and professional growth.
     </p>
-    <div id="exceptional" className="flex gap-5  sm:ml-10 mt-5">
+    <div className="flex gap-5  sm:ml-10 mt-5">
       <Link href="https://www.passionfroot.me/nks">
       <Button variant="outline" className="hover:bg-slate-200 px-10 font-bold ">Collaboration</Button>
       </Link>
