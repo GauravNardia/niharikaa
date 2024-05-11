@@ -12,7 +12,7 @@ const About = () => {
     <Dialog>
       <DialogTrigger asChild>
  
-        <div className="lg:w-2/4 w-full md:flex-row md:h-80 h-[25rem] rounded-xl flex flex-col sm:flex-row mt-5 bg-white">
+        <div className="lg:w-2/4 w-full md:flex-row md:h-80 h-[25rem] rounded-xl flex flex-col sm:flex-row mt-5 bg-white shadow-lg hover:shadow-xl transition duration-2000">
             <div className="md:w-1/2 flex justify-center items-center mt-5 md:mt-0">
                 <Image className="rounded-2xl" src="/assets/grid3.jpg" alt="Profile" height={355} width={200} />
               </div>

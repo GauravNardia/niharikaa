@@ -10,6 +10,7 @@ import Reviews from "../reviews/page";
 import { products } from "@/constants";
 import { HeroParallax } from "@/components/ui/hero-parallax";
 
+
 const Hero = () => {
   return (
     <>

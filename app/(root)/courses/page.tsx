@@ -19,7 +19,7 @@ const Courses = () => {
                   <div className="font-sans font-bold text-xl text-neutral-600 dark:text-neutral-200 mb-2 mt-2">
                     {course.title}
                   </div>
-                  <div className="font-sans font-normal text-2 text-neutral-600 text-xs dark:text-neutral-300">
+                  <div className="font-sans font-normal  text-neutral-500 text-md dark:text-neutral-300">
                     {course.description}
                   </div>
                 </div>
