@@ -113,7 +113,7 @@ export const Header = () => {
     <p className="max-w-2xl text-base sm:text-xl mt-3 dark:text-neutral-200 text-center md:text-left">
     A holistic approach that captures the essence of her multifaceted career and promises comprehensive personal and professional growth.
     </p>
-    <div className="flex gap-5 ml-5 sm:ml-10 mt-5">
+    <div className="flex gap-5 justify-center sm:justify-start sm:ml-10 mt-5">
       <Link href="https://www.passionfroot.me/nks">
       <Button variant="outline" className="hover:bg-slate-200 px-10 font-bold ">Collaboration</Button>
       </Link>

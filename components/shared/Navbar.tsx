@@ -71,7 +71,7 @@ const Navbar = () => {
                   href={link.route}
                   key={link.route}
                 >
-                  <p className={` text-gray-500 ${isActive && "text-violet-700"}`}>{link.label}</p>
+                  <p className={`text-xl text-gray-500 ${isActive && "text-violet-700"}`}>{link.label}</p>
                 </Link>
             </SheetClose>
                     )
@@ -80,7 +80,7 @@ const Navbar = () => {
           
           <div className='m-5 w-full flex justify-center item-center  '>
                 <Link href='https://topmate.io/nks/106479' className='font-extrabold text-white'>
-            <Button className='bg-violet-700 hover:bg-violet-500 px-10'>
+            <Button className=' text-xl bg-violet-700 hover:bg-violet-500 px-10 py-6'>
                 Let's Talk
             </Button>
                 </Link>
