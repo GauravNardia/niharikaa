@@ -15,7 +15,7 @@ const Hero = () => {
   return (
     <>
       <section className="flex flex-col sm:flex-row justify-center mt-3 sm:mt-20 pb-20">
-        <HeroParallax products={products} />
+        <HeroParallax products={products}/>
       </section>
       <Video />
       <Courses />
